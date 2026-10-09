@@ -11,4 +11,4 @@
 - Compilación con `ng build`
 
 ## Estado
-En progreso
+Completada
