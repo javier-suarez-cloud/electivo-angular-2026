@@ -1,0 +1,26 @@
+# ------------------------------------------------------------
+# Material del profesor: se mantiene solo en el PC, no se publica
+# ------------------------------------------------------------
+*.docx
+*.pptx
+*.pdf
+Semana */
+**/material-ejemplo/
+__MACOSX/
+.DS_Store
+
+# ------------------------------------------------------------
+# Angular / Node.js: archivos que se generan automáticamente
+# ------------------------------------------------------------
+node_modules/
+dist/
+.angular/
+out-tsc/
+*.log
+npm-debug.log*
+
+# ------------------------------------------------------------
+# Sistema operativo
+# ------------------------------------------------------------
+Thumbs.db
+desktop.ini
