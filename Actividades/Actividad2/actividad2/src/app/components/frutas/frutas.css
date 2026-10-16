@@ -1,0 +1,21 @@
+section {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #cccccc;
+  border-left: 6px solid #e53935;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #c62828;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.precio {
+  color: #2e7d32;
+  font-weight: bold;
+}

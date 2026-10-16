@@ -11,4 +11,4 @@
 - Componentes: Frutas, Verduras, Frutos Secos, Contacto, Hacer Pedido
 
 ## Estado
-Pendiente
+Completada

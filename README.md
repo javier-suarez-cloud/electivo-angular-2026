@@ -26,7 +26,7 @@ del Instituto Profesional Virginio Gómez, segundo semestre 2026.
 | N° | Actividad | Estado |
 |----|-----------|--------|
 | 1 | [Instalación de Angular y primer proyecto](Actividades/Actividad1) | Completada |
-| 2 | [Creación de componentes](Actividades/Actividad2) | Pendiente |
+| 2 | [Creación de componentes](Actividades/Actividad2) | Completada |
 | 3 | [Formularios reactivos](Actividades/Actividad3) | Pendiente |
 | 4 | [Verdulería en Angular 22](Actividades/Actividad4) | Pendiente |
 
