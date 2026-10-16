@@ -1,0 +1,42 @@
+.menu {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.menu .boton-pedido {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.menu .boton-pedido:hover,
+.menu .boton-pedido.activo {
+  background-color: #1b5e20;
+  color: white;
+}
