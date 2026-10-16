@@ -1,13 +1,61 @@
-section {
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #cccccc;
-  border-left: 6px solid #fb8c00;
-  border-radius: 8px;
-  background-color: #fff8e1;
+.contenedor-pedido {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
 }
 
-h2 {
-  margin-bottom: 10px;
-  color: #ef6c00;
+.contenedor-pedido h2 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+.error {
+  margin-top: 5px;
+  color: #c1c628;
+  font-size: 13px;
+}
+
+button {
+  background-color: #3e2e7d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5e20;
 }

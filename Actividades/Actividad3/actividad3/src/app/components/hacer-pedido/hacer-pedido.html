@@ -1,11 +1,162 @@
-<section>
+<section class="contenedor-pedido">
+
   <h2>Hacer Pedido</h2>
-  <p>
-    Esta sección permitirá registrar tus pedidos de frutas,
-    verduras y frutos secos.
-  </p>
-  <p>
-    En las próximas actividades incorporaremos
-    un formulario para registrar pedidos.
-  </p>
+  <p>Complete los datos para registrar su pedido.</p>
+
+  <form [formGroup]="formularioPedido" (ngSubmit)="enviarPedido()">
+
+    <!-- ========== DATOS DEL CLIENTE ========== -->
+
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" formControlName="nombre">
+
+      @if (formularioPedido.controls.nombre.invalid &&
+           formularioPedido.controls.nombre.touched) {
+        <small class="error">
+          Ingrese un nombre válido de al menos 3 caracteres.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="apellido">Apellido</label>
+      <input id="apellido" type="text" formControlName="apellido">
+
+      @if (formularioPedido.controls.apellido.invalid &&
+           formularioPedido.controls.apellido.touched) {
+        <small class="error">
+          Ingrese un apellido válido de al menos 3 caracteres.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="correo">Correo electrónico</label>
+      <input id="correo" type="email" formControlName="correo">
+
+      @if (formularioPedido.controls.correo.invalid &&
+           formularioPedido.controls.correo.touched) {
+        <small class="error">
+          Ingrese un correo electrónico válido.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="telefono">Teléfono</label>
+      <input id="telefono" type="tel" formControlName="telefono">
+
+      @if (formularioPedido.controls.telefono.invalid &&
+           formularioPedido.controls.telefono.touched) {
+        <small class="error">
+          Ingrese un teléfono válido de al menos 8 dígitos.
+        </small>
+      }
+    </div>
+
+    <!-- ========== DATOS DEL PEDIDO ========== -->
+
+    <div class="campo">
+      <label for="producto">Producto</label>
+      <select id="producto" formControlName="producto">
+        <option value="">Seleccione un producto</option>
+        <option value="manzanas">Manzanas</option>
+        <option value="naranjas">Naranjas</option>
+        <option value="frutillas">Frutillas</option>
+        <option value="platanos">Plátanos</option>
+        <option value="tomates">Tomates</option>
+        <option value="zanahorias">Zanahorias</option>
+        <option value="nueces">Nueces</option>
+        <option value="almendras">Almendras</option>
+      </select>
+
+      @if (formularioPedido.controls.producto.invalid &&
+           formularioPedido.controls.producto.touched) {
+        <small class="error">
+          Debe seleccionar un producto.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="cantidad">Cantidad</label>
+      <input id="cantidad" type="number" min="1" formControlName="cantidad">
+
+      @if (formularioPedido.controls.cantidad.invalid &&
+           formularioPedido.controls.cantidad.touched) {
+        <small class="error">
+          La cantidad debe ser 1 o más.
+        </small>
+      }
+    </div>
+
+    <!-- ========== ENTREGA Y PAGO ========== -->
+
+    <div class="campo">
+      <label for="direccion">Dirección de entrega</label>
+      <input id="direccion" type="text" formControlName="direccion">
+
+      @if (formularioPedido.controls.direccion.invalid &&
+           formularioPedido.controls.direccion.touched) {
+        <small class="error">
+          Ingrese una dirección válida.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="formaEntrega">Forma de entrega</label>
+      <select id="formaEntrega" formControlName="formaEntrega">
+        <option value="">Seleccione una forma de entrega</option>
+        <option value="retiro">Retiro en tienda</option>
+        <option value="despacho">Despacho a domicilio</option>
+      </select>
+
+      @if (formularioPedido.controls.formaEntrega.invalid &&
+           formularioPedido.controls.formaEntrega.touched) {
+        <small class="error">
+          Debe seleccionar una forma de entrega.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="formaPago">Forma de pago</label>
+      <select id="formaPago" formControlName="formaPago">
+        <option value="">Seleccione una forma de pago</option>
+        <option value="efectivo">Efectivo</option>
+        <option value="transferencia">Transferencia</option>
+        <option value="tarjeta">Tarjeta</option>
+      </select>
+
+      @if (formularioPedido.controls.formaPago.invalid &&
+           formularioPedido.controls.formaPago.touched) {
+        <small class="error">
+          Debe seleccionar una forma de pago.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="fechaEntrega">Fecha de entrega</label>
+      <input id="fechaEntrega" type="date" formControlName="fechaEntrega">
+
+      @if (formularioPedido.controls.fechaEntrega.invalid &&
+           formularioPedido.controls.fechaEntrega.touched) {
+        <small class="error">
+          Debe seleccionar una fecha de entrega.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="comentario">Comentario</label>
+      <textarea id="comentario" rows="4" formControlName="comentario"></textarea>
+    </div>
+
+    <button type="submit">Registrar Pedido</button>
+
+  </form>
+
 </section>

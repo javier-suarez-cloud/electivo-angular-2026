@@ -10,4 +10,4 @@
 - `formControlName`, `(ngSubmit)`, `markAllAsTouched()`, `reset()`
 
 ## Estado
-Pendiente
+Completada
