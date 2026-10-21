@@ -1,0 +1,25 @@
+<section class="catalogo">
+  <div class="catalogo__encabezado">
+    <div>
+      <p class="eyebrow">CATÁLOGO</p>
+      <h2>Frutos Secos</h2>
+    </div>
+    <div class="acciones">
+      <button type="button" (click)="ordenarPorNombre()">Ordenar por nombre</button>
+      <button type="button" (click)="ordenarPorPrecio()">Ordenar por precio</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    @for (producto of productos; track producto.id) {
+      <article class="tarjeta">
+        <img [src]="producto.imagen" [alt]="producto.nombre">
+        <p class="categoria">{{ producto.categoria }}</p>
+        <h3>{{ producto.nombre }}</h3>
+        <p>{{ producto.descripcion }}</p>
+        <strong>${{ producto.precio }} / kg</strong>
+        <button type="button" (click)="agregar(producto)">Agregar al carro</button>
+      </article>
+    }
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<section class="carro">
+  <p class="eyebrow">TU SELECCIÓN</p>
+  <h2>Carro de Compra</h2>
+
+  @if (productos().length > 0) {
+    <div class="lista">
+      @for (producto of productos(); track $index) {
+        <article class="item">
+          <img [src]="producto.imagen" [alt]="producto.nombre">
+          <div>
+            <strong>{{ producto.nombre }}</strong>
+            <span>{{ producto.categoria }}</span>
+          </div>
+          <strong>${{ producto.precio }}</strong>
+          <div class="botones">
+            <button class="otro" type="button" (click)="agregarOtro(producto)">+1</button>
+            <button class="eliminar" type="button" (click)="eliminar($index)">Eliminar</button>
+          </div>
+        </article>
+      }
+    </div>
+
+    <div class="resumen">
+      <span>Total</span>
+      <strong>${{ total() }}</strong>
+    </div>
+
+    <button class="vaciar" type="button" (click)="vaciar()">Vaciar carro</button>
+  } @else {
+    <p class="vacio">El carro está vacío. Agrega productos desde las categorías.</p>
+  }
+</section>

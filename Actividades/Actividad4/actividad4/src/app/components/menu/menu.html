@@ -1,0 +1,13 @@
+<nav class="menu" aria-label="Navegación principal">
+  <div class="menu__contenido">
+    <a routerLink="/inicio" routerLinkActive="activo">Inicio</a>
+    <a routerLink="/frutas" routerLinkActive="activo">Frutas</a>
+    <a routerLink="/verduras" routerLinkActive="activo">Verduras</a>
+    <a routerLink="/frutos-secos" routerLinkActive="activo">Frutos Secos</a>
+    <a routerLink="/contacto" routerLinkActive="activo">Contacto</a>
+    <a routerLink="/hacer-pedido" routerLinkActive="activo">Hacer Pedido</a>
+    <a class="carro" routerLink="/carro-compra" routerLinkActive="activo">
+      Carro ({{ cantidadCarrito() }})
+    </a>
+  </div>
+</nav>
