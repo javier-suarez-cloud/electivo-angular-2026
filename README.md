@@ -14,7 +14,8 @@ del Instituto Profesional Virginio Gómez, segundo semestre 2026.
 │   ├── Actividad1/   Instalación de Angular y primer proyecto
 │   ├── Actividad2/   Creación de componentes standalone
 │   ├── Actividad3/   Formularios reactivos
-│   └── Actividad4/   Verdulería completa (routing, servicios, carro, formularios)
+│   ├── Actividad4/   Verdulería completa (routing, servicios, carro, formularios)
+│   └── Actividad5/   API REST con Node.js + Express y consumo desde Angular
 └── Evaluaciones/
     ├── Evaluacion1/  Prototipo Angular funcional
     ├── Evaluacion2/  Aplicación con integración (formularios, API, backend inicial)
@@ -28,7 +29,8 @@ del Instituto Profesional Virginio Gómez, segundo semestre 2026.
 | 1 | [Instalación de Angular y primer proyecto](Actividades/Actividad1) | Completada |
 | 2 | [Creación de componentes](Actividades/Actividad2) | Completada |
 | 3 | [Formularios reactivos](Actividades/Actividad3) | Completada |
-| 4 | [Verdulería en Angular 22](Actividades/Actividad4) | Pendiente |
+| 4 | [Verdulería en Angular 22](Actividades/Actividad4) | Completada |
+| 5 | [API REST con Node.js y Angular 22](Actividades/Actividad5) | Completada |
 
 ## Evaluaciones
 
