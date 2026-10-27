@@ -1,0 +1,27 @@
+.cabecera {
+  background: linear-gradient(135deg, #1b5e20, #43a047 60%, #ef6c00);
+  color: #ffffff;
+  padding: 34px 20px;
+}
+
+.cabecera__contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cabecera__marca {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.cabecera p:last-child {
+  margin: 10px 0 0;
+  font-size: 1.05rem;
+}

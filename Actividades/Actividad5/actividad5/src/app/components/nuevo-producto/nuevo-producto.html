@@ -1,0 +1,77 @@
+<section class="formulario-producto">
+
+  <h2>Registrar Producto</h2>
+
+  <form
+    [formGroup]="formulario"
+    (ngSubmit)="guardar()">
+
+    <label for="nombre">
+      Nombre
+    </label>
+    <input
+      id="nombre"
+      type="text"
+      formControlName="nombre">
+
+    <label for="descripcion">
+      Descripción
+    </label>
+    <textarea
+      id="descripcion"
+      formControlName="descripcion">
+    </textarea>
+
+    <label for="precio">
+      Precio
+    </label>
+    <input
+      id="precio"
+      type="number"
+      min="1"
+      formControlName="precio">
+
+    <label for="categoria">
+      Categoría
+    </label>
+    <select
+      id="categoria"
+      formControlName="categoria">
+      <option value="verduras">
+        Verduras
+      </option>
+      <option value="frutas">
+        Frutas
+      </option>
+      <option value="frutos-secos">
+        Frutos Secos
+      </option>
+    </select>
+
+    <label for="imagen">
+      Ruta de imagen
+    </label>
+    <input
+      id="imagen"
+      type="text"
+      formControlName="imagen">
+
+    <button type="submit">
+      Guardar producto
+    </button>
+
+  </form>
+
+  @if (mensaje()) {
+    <p class="mensaje">
+      {{ mensaje() }}
+    </p>
+  }
+
+  @if (error()) {
+    <p class="error">
+      {{ error() }}
+    </p>
+  }
+
+</section>

@@ -1,0 +1,15 @@
+.contenido-principal {
+  min-height: 62vh;
+  padding: 28px 18px 40px;
+}
+
+.pie {
+  background: #163b25;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px;
+}
+
+.pie p {
+  margin: 0;
+}

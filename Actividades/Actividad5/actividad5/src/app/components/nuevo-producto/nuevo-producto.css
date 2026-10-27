@@ -1,0 +1,46 @@
+.formulario-producto {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+.mensaje {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.error {
+  color: #c62828;
+  font-weight: bold;
+}

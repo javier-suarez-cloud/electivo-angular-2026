@@ -1,0 +1,42 @@
+.contacto {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #e0e7e1;
+}
+
+.eyebrow {
+  color: #2e7d32;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  margin-top: 4px;
+  color: #173c22;
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+article {
+  padding: 18px;
+  background: #f4f8f4;
+  border-radius: 10px;
+}
+
+span,
+strong {
+  display: block;
+}
+
+span {
+  margin-bottom: 6px;
+  color: #6b7d72;
+}

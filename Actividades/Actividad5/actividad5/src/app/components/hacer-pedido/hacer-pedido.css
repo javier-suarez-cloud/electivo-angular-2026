@@ -1,0 +1,76 @@
+.pedido {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e0e7e1;
+}
+
+.eyebrow {
+  color: #2e7d32;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  margin: 4px 0 8px;
+  color: #173c22;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.campo {
+  display: grid;
+  gap: 6px;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cfd8d2;
+  border-radius: 7px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #ffcc80;
+  border-color: #ef6c00;
+}
+
+small {
+  color: #c62828;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #ef6c00;
+  color: #ffffff;
+  padding: 13px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e65100;
+}
+
+.exito {
+  padding: 12px;
+  border-radius: 8px;
+  background: #e8f5e9;
+  color: #1b5e20;
+  font-weight: 700;
+}

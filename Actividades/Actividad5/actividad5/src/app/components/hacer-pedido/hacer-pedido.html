@@ -1,0 +1,69 @@
+<section class="pedido">
+  <div class="pedido__encabezado">
+    <p class="eyebrow">FINALIZAR COMPRA</p>
+    <h2>Hacer Pedido</h2>
+    <p>Productos en el carro: <strong>{{ cantidadProductos() }}</strong> · Total: <strong>${{ total() }}</strong></p>
+  </div>
+
+  @if (mensajeExito) {
+    <p class="exito">{{ mensajeExito }}</p>
+  }
+
+  <form [formGroup]="pedidoForm" (ngSubmit)="enviarPedido()">
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" formControlName="nombre">
+      @if (pedidoForm.controls.nombre.invalid && pedidoForm.controls.nombre.touched) {
+        <small>Ingrese un nombre de al menos 3 caracteres.</small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="email">Correo electrónico</label>
+      <input id="email" type="email" formControlName="email">
+      @if (pedidoForm.controls.email.invalid && pedidoForm.controls.email.touched) {
+        <small>Ingrese un correo electrónico válido.</small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="telefono">Teléfono</label>
+      <input id="telefono" type="text" formControlName="telefono">
+      @if (pedidoForm.controls.telefono.invalid && pedidoForm.controls.telefono.touched) {
+        <small>Ingrese un teléfono válido.</small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="direccion">Dirección</label>
+      <input id="direccion" type="text" formControlName="direccion">
+      @if (pedidoForm.controls.direccion.invalid && pedidoForm.controls.direccion.touched) {
+        <small>Ingrese una dirección de al menos 5 caracteres.</small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="entrega">Forma de entrega</label>
+      <select id="entrega" formControlName="entrega">
+        <option value="retiro">Retiro en tienda</option>
+        <option value="despacho">Despacho a domicilio</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="pago">Forma de pago</label>
+      <select id="pago" formControlName="pago">
+        <option value="transferencia">Transferencia</option>
+        <option value="tarjeta">Tarjeta</option>
+        <option value="efectivo">Efectivo</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="comentario">Comentario</label>
+      <textarea id="comentario" rows="4" formControlName="comentario"></textarea>
+    </div>
+
+    <button type="submit">Confirmar pedido</button>
+  </form>
+</section>

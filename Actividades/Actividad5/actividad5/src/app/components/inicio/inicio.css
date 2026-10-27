@@ -1,0 +1,52 @@
+.inicio {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 420px;
+  display: grid;
+  align-items: center;
+  padding: 40px;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #f1f8e9, #ffffff);
+  border: 1px solid #dce8d9;
+}
+
+.eyebrow {
+  color: #2e7d32;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+h2 {
+  max-width: 760px;
+  margin: 8px 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: #173c22;
+}
+
+.inicio p:not(.eyebrow) {
+  max-width: 720px;
+  line-height: 1.65;
+  color: #50615a;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.acciones a {
+  text-decoration: none;
+  background: #2e7d32;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.acciones a.secundario {
+  background: #ffffff;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}

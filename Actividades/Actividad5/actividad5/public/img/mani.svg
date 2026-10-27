@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" fill="#fff8e1"/>
+  <ellipse cx="150" cy="250" rx="85" ry="12" fill="#000" opacity="0.08"/>
+  <g transform="translate(115 160) rotate(-30)"><path d="M0 -60 C28 -60 30 -30 20 -15 C12 -3 12 3 20 15 C30 30 28 60 0 60 C-28 60 -30 30 -20 15 C-12 3 -12 -3 -20 -15 C-30 -30 -28 -60 0 -60 Z" fill="#d7b07a" stroke="#a1783f" stroke-width="3"/><path d="M-12 -40 L12 -40 M-14 -25 L14 -25 M-12 25 L12 25 M-14 40 L14 40" stroke="#a1783f" stroke-width="2"/></g>
+  <g transform="translate(195 170) rotate(25)"><path d="M0 -55 C25 -55 27 -28 18 -14 C11 -3 11 3 18 14 C27 28 25 55 0 55 C-25 55 -27 28 -18 14 C-11 3 -11 -3 -18 -14 C-27 -28 -25 -55 0 -55 Z" fill="#e0bd8a" stroke="#a1783f" stroke-width="3"/><path d="M-12 -35 L12 -35 M-12 35 L12 35" stroke="#a1783f" stroke-width="2"/></g>
+</svg>
